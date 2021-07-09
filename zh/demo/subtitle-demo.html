@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>播放字幕 | MuiPlayer</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/mui-player.min.css">
+    <link rel="stylesheet" href="/css/CommentCoreLibrary.min.css">
+    <link rel="apple-touch-icon" href="https://muiplayer.oss-cn-shanghai.aliyuncs.com/static/image/logo_solid.png">
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-X4RSEE27EY"></script>
+    <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-X4RSEE27EY');
+        </script>
+    <script src="/plugin/flv.min.js"></script>
+    <script src="/plugin/hls.min.js"></script>
+    <script src="/js/mui-player.min.js"></script>
+    <script src="/js/mui-player-desktop-plugin.min.js"></script>
+    <script src="/js/CommentCoreLibrary.min.js"></script>
+    <meta name="description" content="一款优秀的 H5 视频播放器框架">
+    <meta name="baidu-site-verification" content="code-AdGRxnQ9NZ">
+    <meta name="theme-color" content="#1e98d4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.e1254f3c.css" as="style"><link rel="preload" href="/assets/js/app.f14d2339.js" as="script"><link rel="preload" href="/assets/js/3.45c4687d.js" as="script"><link rel="preload" href="/assets/js/43.00e58973.js" as="script"><link rel="preload" href="/assets/js/13.31040105.js" as="script"><link rel="prefetch" href="/assets/js/1.51452eff.js"><link rel="prefetch" href="/assets/js/10.0d03b42b.js"><link rel="prefetch" href="/assets/js/11.ef368b55.js"><link rel="prefetch" href="/assets/js/12.c548ffd4.js"><link rel="prefetch" href="/assets/js/14.87b5c464.js"><link rel="prefetch" href="/assets/js/15.74754f4b.js"><link rel="prefetch" href="/assets/js/16.e0bcb587.js"><link rel="prefetch" href="/assets/js/17.c7e5932d.js"><link rel="prefetch" href="/assets/js/18.2b0ba42b.js"><link rel="prefetch" href="/assets/js/19.f71be4ce.js"><link rel="prefetch" href="/assets/js/20.260f4264.js"><link rel="prefetch" href="/assets/js/21.0e549a98.js"><link rel="prefetch" href="/assets/js/22.dc3a0cd8.js"><link rel="prefetch" href="/assets/js/23.c49cc389.js"><link rel="prefetch" href="/assets/js/24.471a8bcd.js"><link rel="prefetch" href="/assets/js/25.29101930.js"><link rel="prefetch" href="/assets/js/26.79d36f43.js"><link rel="prefetch" href="/assets/js/27.9744d628.js"><link rel="prefetch" href="/assets/js/28.805adf67.js"><link rel="prefetch" href="/assets/js/29.2f6bd123.js"><link rel="prefetch" href="/assets/js/30.623160aa.js"><link rel="prefetch" href="/assets/js/31.92f413c0.js"><link rel="prefetch" href="/assets/js/32.8b04007f.js"><link rel="prefetch" href="/assets/js/33.1bcecf1e.js"><link rel="prefetch" href="/assets/js/34.85ac9cf4.js"><link rel="prefetch" href="/assets/js/35.2de2039d.js"><link rel="prefetch" href="/assets/js/36.3331b40b.js"><link rel="prefetch" href="/assets/js/37.b81bd26b.js"><link rel="prefetch" href="/assets/js/38.25693d0f.js"><link rel="prefetch" href="/assets/js/39.47f9b645.js"><link rel="prefetch" href="/assets/js/4.23062a90.js"><link rel="prefetch" href="/assets/js/40.c4db1609.js"><link rel="prefetch" href="/assets/js/41.5dfc4d04.js"><link rel="prefetch" href="/assets/js/42.4f4b77ae.js"><link rel="prefetch" href="/assets/js/44.1fbca44f.js"><link rel="prefetch" href="/assets/js/45.6888c54e.js"><link rel="prefetch" href="/assets/js/46.a4534923.js"><link rel="prefetch" href="/assets/js/47.7c31d8b0.js"><link rel="prefetch" href="/assets/js/48.075ab093.js"><link rel="prefetch" href="/assets/js/49.f86644f7.js"><link rel="prefetch" href="/assets/js/5.9beae823.js"><link rel="prefetch" href="/assets/js/50.822f8471.js"><link rel="prefetch" href="/assets/js/51.a8ed14da.js"><link rel="prefetch" href="/assets/js/52.35512b09.js"><link rel="prefetch" href="/assets/js/53.ba3f7d6a.js"><link rel="prefetch" href="/assets/js/54.76bd6c74.js"><link rel="prefetch" href="/assets/js/55.ca25c53d.js"><link rel="prefetch" href="/assets/js/56.daae5268.js"><link rel="prefetch" href="/assets/js/57.0094f771.js"><link rel="prefetch" href="/assets/js/58.a2fe1184.js"><link rel="prefetch" href="/assets/js/59.4cb287d5.js"><link rel="prefetch" href="/assets/js/6.97800caf.js"><link rel="prefetch" href="/assets/js/7.f6e370aa.js"><link rel="prefetch" href="/assets/js/8.9608a7a9.js"><link rel="prefetch" href="/assets/js/9.cbabb857.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e1254f3c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" class="home-link router-link-active"><!----> <span class="site-name">MuiPlayer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zh/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/zh/demo/" class="nav-link router-link-active">
+  演示
+</a></div><div class="nav-item"><a href="/zh/joinUs/" class="nav-link">
+  下载
+</a></div><div class="nav-item"><a href="https://gitee.com/muiplayer/hello-muiplayer" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="选择语言" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="选择语言" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/demo/subtitle-demo.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/demo/subtitle-demo.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/muiplayer/hello-muiplayer" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zh/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/zh/demo/" class="nav-link router-link-active">
+  演示
+</a></div><div class="nav-item"><a href="/zh/joinUs/" class="nav-link">
+  下载
+</a></div><div class="nav-item"><a href="https://gitee.com/muiplayer/hello-muiplayer" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="选择语言" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="选择语言" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/demo/subtitle-demo.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/demo/subtitle-demo.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/muiplayer/hello-muiplayer" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>演示</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/demo/" aria-current="page" class="sidebar-link">基础演示</a></li><li><a href="/zh/demo/live-demo.html" class="sidebar-link">直播模式</a></li><li><a href="/zh/demo/subtitle-demo.html" aria-current="page" class="active sidebar-link">播放字幕</a></li><li><a href="/zh/demo/danmaku-demo.html" class="sidebar-link">播放弹幕</a></li><li><a href="/zh/demo/multiple-demo.html" class="sidebar-link">多窗口播放</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="播放字幕"><a href="#播放字幕" class="header-anchor">#</a> 播放字幕</h1> <!----></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/muiplayer/hello-muiplayer/edit/master/docs/docs/zh/demo/subtitle-demo.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021-4-29 17:41:58</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zh/demo/live-demo.html" class="prev">
+        直播模式
+      </a></span> <span class="next"><a href="/zh/demo/danmaku-demo.html">
+        播放弹幕
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.f14d2339.js" defer></script><script src="/assets/js/3.45c4687d.js" defer></script><script src="/assets/js/43.00e58973.js" defer></script><script src="/assets/js/13.31040105.js" defer></script>
+  </body>
+</html>
