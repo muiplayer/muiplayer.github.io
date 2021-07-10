@@ -161,11 +161,5 @@ export default {
         ]
     },
     plugins:[
-        typeof MuiPlayerMobilePlugin != 'undefined' ? new MuiPlayerMobilePlugin({
-            thumbnails:globals.thumbnails, // 缩略图配置
-            defaultMenuConfig:{
-                showShare:[1,2,3,4],
-            },
-        }) : {}
     ],
 }

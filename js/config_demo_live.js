@@ -48,11 +48,5 @@ export default {
     plugins:[
         typeof MuiPlayerDesktopPlugin != 'undefined' ? new MuiPlayerDesktopPlugin({
         }) : {},
-
-        typeof MuiPlayerMobilePlugin != 'undefined' ? new MuiPlayerMobilePlugin({
-            defaultMenuConfig:{
-                showShare:[1,2,3,4],
-            },
-        }) : {}
     ],
 }

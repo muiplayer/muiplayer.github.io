@@ -24,11 +24,11 @@ export default {
         typeof MuiPlayerDesktopPlugin != 'undefined' ? new MuiPlayerDesktopPlugin({
         }) : {},
 
-        typeof MuiPlayerMobilePlugin != 'undefined' ? new MuiPlayerMobilePlugin({
-            defaultMenuConfig:{
+        typeof MuiPlayerMobilePlugin == 'function' ? new MuiPlayerMobilePlugin({
+            defaultMenuConfig:{ 
                 showShare:[1,2,3,4],
             },
-            thumbnails:globals.thumbnails,
-        }) : {}
+            thumbnails:globals.thumbnails, // 缩略图配置
+        }) : {},
     ],
 }
