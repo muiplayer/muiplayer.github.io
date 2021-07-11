@@ -43,10 +43,22 @@ export default {
         typeof MuiPlayerDesktopPlugin != 'undefined' ? new MuiPlayerDesktopPlugin({
             customSetting:customSetting, // 自定义设置组菜单
             thumbnails:globals.thumbnails, // 缩略图配置
-            contextmenu:[],  // 自定义右键菜单
+            contextmenu:[
+                {
+                    name:'muiplayer',
+                    context:'Muiplayer',
+                    zIndex:0,
+                    show:false,
+                    click:function(close) {
+                        globals.mp.showToast('Trigger Click！');
+                        close();
+                    }
+                },
+            ],  // 自定义右键菜单
         }) : {},
 
         typeof MuiPlayerMobilePlugin == 'function' ? new MuiPlayerMobilePlugin({
+            key:'01K01L01K01I01H01I01L01K01C01H01L01K01H01J01J',
             defaultMenuConfig:{ 
                 showShare:[1,2,3,4],
             },
