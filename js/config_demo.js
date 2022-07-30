@@ -25,9 +25,9 @@ export default {
         }) : {},
 
         typeof MuiPlayerMobilePlugin == 'function' ? new MuiPlayerMobilePlugin({
-            key:'01K01K01G01F01J01C01H01G01G01C01I01C01H01E01H',
+            key:'01H01H01J01D01J01I01H01C01J01J01D01E01G01L01K',
             defaultMenuConfig:{ 
-                showShare:[1,2,3,4],
+                showShare:[1,2,3,4,5,6],
             },
             thumbnails:globals.thumbnails, // 缩略图配置
         }) : {},
